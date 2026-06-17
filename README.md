@@ -1,6 +1,6 @@
 # 🧬 PepFASTA
 
-🚀 **Live App:** https://your-app-name.streamlit.app
+🚀 **Live App:** https://pepfasta-yjuqi3af75uhtsc4kjgka9.streamlit.app/
 
 PepFASTA is a scalable Streamlit application for converting proteomics peptide datasets into FASTA format. It supports both single CSV files and batch processing via ZIP upload, making it suitable for real-world laboratory workflows.
 
