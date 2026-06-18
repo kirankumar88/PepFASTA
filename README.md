@@ -1,6 +1,6 @@
 # 🧬 PepFASTA
 
-🚀 **Live App:** https://pepfasta-yjuqi3af75uhtsc4kjgka9.streamlit.app/
+🚀 **Sreatmlit_Live App:** https://pepfasta-yjuqi3af75uhtsc4kjgka9.streamlit.app/
 
 PepFASTA is a scalable Streamlit application for converting proteomics peptide datasets into FASTA format. It supports both single CSV files and batch processing via ZIP upload, making it suitable for real-world laboratory workflows.
 
@@ -109,21 +109,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
----
-
-## 🌐 Deploy Your Own
-
-You can deploy this app for free using Streamlit Community Cloud:
-
-1. Push this repository to GitHub
-2. Go to https://streamlit.io/cloud
-3. Click **New app**
-4. Select your repository (`PepFASTA`)
-5. Set entry point as `app.py`
-6. Deploy
-
----
-
 ## 📦 Requirements
 
 ```
@@ -165,7 +150,6 @@ pandas
 * QC reports and peptide statistics
 * Combined FASTA output option
 * SignalP / Phobius integration
-* Export cleaned CSV
 
 ---
 
