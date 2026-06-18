@@ -7,6 +7,30 @@ import io
 st.set_page_config(page_title="CSV → Peptide_FASTA_Generator", layout="wide")
 
 st.title("🧬 CSV → Peptide_FASTA_Generator")
+
+st.subheader("📄 Example Input Format")
+
+sample_data = pd.DataFrame({
+    "Protein_IDs": ["A0A0D9MMY4", "B8N5Q9"],
+    "Protein_names": [
+        "Tetratricopeptide repeat domain protein",
+        "Cytochrome c oxidase subunit 2"
+    ],
+    "Peptide_sequence_1": ["M(ox)KTLLILT", "LLAGGTTK"],
+    "Peptide_sequence_2": ["GAVVTGQGTR", "PEPTIDESEQ"],
+    "Peptide_sequence_3": ["", "ACDEFGHIK"]
+})
+
+csv_sample = sample_data.to_csv(index=False)
+
+st.download_button(
+    label="📥 Download Sample CSV",
+    data=csv_sample,
+    file_name="sample_peptide_input.csv",
+    mime="text/csv"
+)
+
+st.dataframe(sample_data)
 st.write("Upload a CSV or ZIP file (MaxQuant-style) to generate FASTA.")
 
 # =========================
